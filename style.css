@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0.5rem;
+    background-color: rgb(5, 1, 22);
+}
+
+#canvas, #numbers, #hands, #date{
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#canvas{
+z-index: 0;
+}
+
+#numbers, #date{
+  z-index: 1;
+}
+
+#hands{
+  z-index: 2;
+}
+
+/* ----------------------------- media */
+/* ----------------------------- 1 */
+@media screen and (max-width:576px){
+    html{
+      font-size: 13px;
+    }    
+  }
+  
+  /* ----------------------------- 2 */
+  @media screen and (min-width:576px) and (max-width:769px){
+    html{
+      font-size: 15px;
+    }
+  }
+  /* ----------------------------- 3 */
+  @media screen and (min-width:769px){
+    html{
+      font-size: 15px;
+    }
+  }
